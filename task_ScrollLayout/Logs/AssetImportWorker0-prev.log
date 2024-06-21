@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Jonghow/task_ScrollLayout
+C:/Users/Jonghow/Desktop/task_scrollLayout/task_ScrollLayout
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62501
-Successfully changed project path to: C:/Users/Jonghow/task_ScrollLayout
-C:/Users/Jonghow/task_ScrollLayout
+65075
+Successfully changed project path to: C:/Users/Jonghow/Desktop/task_scrollLayout/task_ScrollLayout
+C:/Users/Jonghow/Desktop/task_scrollLayout/task_ScrollLayout
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,16 +49,16 @@ C:/Users/Jonghow/task_ScrollLayout
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [36500] Host "[IP] 211.196.206.242 [Port] 0 [Flags] 2 [Guid] 4287382086 [EditorId] 4287382086 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6NDVO19) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14996] Host "[IP] 211.196.206.242 [Port] 0 [Flags] 2 [Guid] 987524960 [EditorId] 987524960 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6NDVO19) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [36500] Host "[IP] 211.196.206.242 [Port] 0 [Flags] 2 [Guid] 4287382086 [EditorId] 4287382086 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6NDVO19) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14996] Host "[IP] 211.196.206.242 [Port] 0 [Flags] 2 [Guid] 987524960 [EditorId] 987524960 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6NDVO19) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 7.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Jonghow/task_ScrollLayout/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Jonghow/Desktop/task_scrollLayout/task_ScrollLayout/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008531 seconds.
-- Loaded All Assemblies, in  0.250 seconds
+Registered in 0.009521 seconds.
+- Loaded All Assemblies, in  0.238 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.207 seconds
-Domain Reload Profiling: 455ms
-	BeginReloadAssembly (80ms)
+- Finished resetting the current domain, in  0.198 seconds
+Domain Reload Profiling: 435ms
+	BeginReloadAssembly (79ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (23ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (94ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (87ms)
 		LoadAssemblies (78ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (92ms)
-			TypeCache.Refresh (91ms)
-				TypeCache.ScanAssembly (82ms)
+		AnalyzeDomain (85ms)
+			TypeCache.Refresh (84ms)
+				TypeCache.ScanAssembly (76ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (207ms)
+	FinalizeReload (198ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (169ms)
+		SetupLoadedEditorAssemblies (163ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (54ms)
+			InitializePlatformSupportModulesInManaged (53ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (76ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,7 +117,7 @@ Domain Reload Profiling: 455ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.447 seconds
+- Loaded All Assemblies, in  0.429 seconds
 Refreshing native plugins compatible for Editor in 2.55 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.428 seconds
-Domain Reload Profiling: 873ms
-	BeginReloadAssembly (104ms)
+- Finished resetting the current domain, in  0.457 seconds
+Domain Reload Profiling: 883ms
+	BeginReloadAssembly (100ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
+		CreateAndSetChildDomain (16ms)
 	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (284ms)
-		LoadAssemblies (228ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (212ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (120ms)
-			TypeCache.Refresh (107ms)
-				TypeCache.ScanAssembly (97ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (90ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (428ms)
+	FinalizeReload (457ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (330ms)
+		SetupLoadedEditorAssemblies (363ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
+			InitializePlatformSupportModulesInManaged (17ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (225ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
+			ProcessInitializeOnLoadAttributes (259ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3146 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (57.5 KB). Loaded Objects now: 3611.
-Memory consumption went from 131.4 MB to 131.3 MB.
-Total: 3.308600 ms (FindLiveObjects: 0.347800 ms CreateObjectMapping: 0.118900 ms MarkObjects: 2.716200 ms  DeleteObjects: 0.125100 ms)
+Unloading 3734 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.0 KB). Loaded Objects now: 4202.
+Memory consumption went from 142.4 MB to 142.4 MB.
+Total: 2.488700 ms (FindLiveObjects: 0.189700 ms CreateObjectMapping: 0.065200 ms MarkObjects: 2.153900 ms  DeleteObjects: 0.079400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,3 +181,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 138348.078803 seconds.
+  path: Packages/com.unity.performance.profile-analyzer
+  artifactKey: Guid(f3537f73420705f714484fcf71405ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.performance.profile-analyzer using Guid(f3537f73420705f714484fcf71405ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1721e8dd993406800a279bcca54f0b') in 0.001795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
