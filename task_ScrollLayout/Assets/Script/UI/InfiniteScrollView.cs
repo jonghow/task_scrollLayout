@@ -5,31 +5,41 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.ComponentModel;
 using UnityEditor;
+using Unity.VisualScripting;
+using static UnityEditor.Progress;
 
 [RequireComponent(typeof(ScrollRect))]
+
 public class InfiniteScrollView : MonoBehaviour
 {
+    [RequireComponentInChildren(typeof(InfiniteScrollItemGroup))]
     [SerializeField] InfiniteItemBase _Item;
 
     private Action _onUpdateCallback;
     private const int _createBufferCount = 3; // Notice : 스크롤 뷰에 사용되는 버퍼 아이템 값 
     private int _createItemCount; // Notice : 생성되는 갯수
     private float offset;
-    private int _dataCount; 
+    private int _dataCount;
+    private int _itemRowCount;
 
     [Tooltip("Base Item Height")] [ReadOnly(false)] private float _itemHeight;
+    [Tooltip("Base Item Width")][ReadOnly(false)] private float _itemWidth;
 
     [SerializeField] private ScrollRect _scrollRect;
-    [ReadOnly(true)][SerializeField] private List<GameObject> itemList = new List<GameObject>();
+    private RectTransform _scrollRectTransform;
+    [ReadOnly(true)][SerializeField] private List<GameObject> itemList = new List<GameObject>(); // Group으로 관리
 
-    private void Awake() 
+    [SerializeField] private GameObject _groupObject;
+
+    private void OnEnable()
     {
-        Init(); 
+        Init();
     }
 
     private void Init()
     {
         _scrollRect = GetComponent<ScrollRect>();
+        _scrollRectTransform = GetComponent<RectTransform>();
         _dataCount = MailManager.GetInstance().MailList.Count;
 
         CreateItems();
@@ -42,19 +52,34 @@ public class InfiniteScrollView : MonoBehaviour
         itemList.Clear();
 
         _itemHeight = _Item == null ? 0 : _Item.GetItemHeight(); // Notice : Item Height
+        _itemWidth = _Item == null ? 0 : _Item.GetItemWidth(); // Notice : Item Width
 
-        int ItemCount;
-        ItemCount = _Item == null ? 0 : (int)(rectTransform.rect.height / _itemHeight) + _createBufferCount;
+        int ItemCount = _Item == null ? 0 : (int)(rectTransform.rect.height / _itemHeight) + _createBufferCount;
+        _itemRowCount = _Item == null ? 0 : (int)(rectTransform.rect.width / _itemWidth);
 
         for (int i = 0; i < ItemCount; ++i)
         {
-            GameObject Item = Instantiate(_Item.gameObject, _scrollRect.content);
+            GameObject groupObject = GameObject.Instantiate(_groupObject);
+            groupObject.transform.SetParent(_scrollRect.content.transform);
+            groupObject.transform.localPosition = new Vector3(0f, -i * _itemHeight);
+            ClientUtility.SetActive(ref groupObject, true);
 
-            var ItemComponent = Item.GetComponent<InfiniteItemBase>();
-            itemList.Add(Item);
+            var groupObjectRectSize = groupObject.transform.GetComponent<RectTransform>().sizeDelta;
+            groupObjectRectSize = new Vector2(_scrollRectTransform.sizeDelta.x, _itemHeight);
+            groupObject.transform.GetComponent<RectTransform>().sizeDelta = groupObjectRectSize; // Notice : GroupSize Conversion
 
-            Item.transform.localPosition = new Vector3(0f, - i * _itemHeight);
-            SetData(ItemComponent, i);
+            itemList.Add(groupObject);
+
+            for (int j = 0; j < _itemRowCount; ++j)
+            {
+                GameObject Item = Instantiate(_Item.gameObject, _scrollRect.content);
+                Item.transform.SetParent(groupObject.transform);
+
+                var ItemComponent = Item.GetComponent<InfiniteItemBase>();
+
+                Item.transform.localPosition = new Vector3(j * _itemWidth, 0);
+                SetData(ItemComponent, i * _itemRowCount + j); // 
+            }
         }
 
         offset = itemList.Count * _itemHeight;
@@ -64,23 +89,27 @@ public class InfiniteScrollView : MonoBehaviour
     {
         if (_scrollRect != null)
         {
-            Vector2 newV = new Vector2(_scrollRect.content.sizeDelta.x, (_dataCount * _itemHeight));
+            Vector2 newV = new Vector2(_scrollRect.content.sizeDelta.x, (MathF.Ceiling((float)_dataCount / (float)_itemRowCount)) * _itemHeight);
             _scrollRect.content.sizeDelta = newV;
         }
     }
 
-    public bool UpdateItemPostion(InfiniteItemBase item, float contentsY, float scrollHeight)
+    public bool UpdateItemPostion(GameObject groupObject, float contentsY, float scrollHeight)
     {
-        if (item.transform.localPosition.y + contentsY > (_itemHeight * 2))
+        if (groupObject.transform.localPosition.y + contentsY > (_itemHeight * 2))
         {
-            item.transform.localPosition -= new Vector3(0, itemList.Count * _itemHeight);
-            UpdateItemPostion(item, contentsY, scrollHeight);
+            int idx = (int)(groupObject.transform.localPosition.x / _itemWidth);
+
+            groupObject.transform.localPosition -= new Vector3(idx * _itemWidth, itemList.Count * _itemHeight);
+            UpdateItemPostion(groupObject, contentsY, scrollHeight);
             return true;
         }
-        else if (item.transform.localPosition.y + contentsY < -scrollHeight - (_itemHeight))
+        else if (groupObject.transform.localPosition.y + contentsY < -scrollHeight - (_itemHeight))
         {
-            item.transform.localPosition += new Vector3(0, itemList.Count * _itemHeight);
-            UpdateItemPostion(item, contentsY, scrollHeight);
+            int idx = (int)(groupObject.transform.localPosition.x / _itemWidth);
+
+            groupObject.transform.localPosition += new Vector3(idx * _itemWidth, itemList.Count * _itemHeight);
+            UpdateItemPostion(groupObject, contentsY, scrollHeight);
             return true;
         }
 
@@ -106,13 +135,22 @@ public class InfiniteScrollView : MonoBehaviour
 
         foreach (GameObject obj in itemList)
         {
-            var item = obj.GetComponent<InfiniteItemBase>();
+            //var item = obj.GetComponent<InfiniteItemBase>();
 
-            bool isChanged = UpdateItemPostion(item, contentsY, scrollHeight);
+            bool isChanged = UpdateItemPostion(obj, contentsY, scrollHeight);
             if (isChanged)
             {
-                int idx = (int)(-item.transform.localPosition.y / _itemHeight);
-                SetData(item, idx);
+                for(int i = 0; i < obj.transform.childCount; ++i)
+                {
+                    var child = obj.transform.GetChild(i);
+                    if (child == null) continue;
+                    var item = child.GetComponent<InfiniteItemBase>();
+
+                    int idx = (int)(-obj.transform.localPosition.y / (_itemHeight )); // 이게 그 그룹의 n번째
+                    idx = (idx * _itemRowCount) + i;
+
+                    SetData(item, idx);
+                }
             }
         }
     }
