@@ -23,11 +23,11 @@
       "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\infiniteitembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|c:\\users\\jonghow\\desktop\\task_scrolllayout\\task_scrolllayout\\assets\\script\\infinitescrollitem\\shopitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\infinitescrollitem\\shopitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\infinitescrollitem\\shopitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|c:\\users\\jonghow\\desktop\\task_scrolllayout\\task_scrolllayout\\assets\\script\\attribute\\infinitescrollitemgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\attribute\\infinitescrollitemgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\attribute\\infinitescrollitemgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Assets\\Script\\Attribute\\InfiniteScrollItemGroup.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T02:17:24.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T02:17:24.114Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Assets\\Script\\InfiniteScrollItem\\ShopItems.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T02:07:57.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T02:07:57.375Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Assets\\Script\\Utility\\ClientUtility.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T01:58:10.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T01:58:10.33Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Assets\\Script\\Attribute\\CustomRequireComponentFindChild.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAD4vzIAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T01:27:35.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T01:27:35.503Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "Assets\\Script\\UI\\InfiniteScrollView.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T01:00:19.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T01:00:19.424Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "Assets\\Script\\UI\\InfiniteItemBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T01:00:18.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T01:00:18.9Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "Assets\\Script\\UI\\UIButton.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAADwvwoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:47:54.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T23:47:54.061Z"
             },
             {
               "$type": "Document",
