@@ -8,6 +8,7 @@ public abstract class InfiniteItemBase : MonoBehaviour
 {
     public abstract void SetData(string contents);
     public abstract float GetItemHeight();
+    public abstract float GetItemWidth();
 }
 
 

@@ -60,12 +60,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\TestMailScroll\MailItem.cs" />
+    <Compile Include="Assets\Script\InfiniteScrollItem\ShopItems.cs" />
+    <Compile Include="Assets\Script\UI\UIButton.cs" />
+    <Compile Include="Assets\Script\Attribute\CustomRequireComponentFindChild.cs" />
     <Compile Include="Assets\Script\Managers\MailManager.cs" />
     <Compile Include="Assets\Script\UI\InfiniteItemBase.cs" />
     <Compile Include="Assets\Script\UI\InfiniteScrollView.cs" />
     <Compile Include="Assets\Script\Utility\ClientUtility.cs" />
     <Compile Include="Assets\Script\Managers\ResourceManager.cs" />
+    <Compile Include="Assets\Script\Attribute\InfiniteScrollItemGroup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -24,9 +24,9 @@ public class MailManager
     {
         MailList.Clear();
 
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 500; i++)
         {
-            MailList.Add($"{i}번째 보상 우편");
+            MailList.Add($"{i * 100}");
         }
     }
 

@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\jonghow\\desktop\\task_scrolllayout\\task_scrolllayout\\assets\\script\\extremescrollview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\script\\extremescrollview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|c:\\users\\jonghow\\desktop\\task_scrolllayout\\task_scrolllayout\\assets\\script\\managers\\mailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\managers\\mailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\ui\\infinitescrollview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\infinitescrollview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\utility\\clientutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\utility\\clientutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\attribute\\customrequirecomponentfindchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\attribute\\customrequirecomponentfindchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\ui\\infiniteitembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\infiniteitembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|c:\\users\\jonghow\\desktop\\task_scrolllayout\\task_scrolllayout\\assets\\script\\infinitescrollitem\\shopitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\infinitescrollitem\\shopitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|c:\\users\\jonghow\\desktop\\task_scrolllayout\\task_scrolllayout\\assets\\script\\attribute\\infinitescrollitemgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\attribute\\infinitescrollitemgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\ui\\uibutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\uibutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4527BF0-DA5D-B871-6DAE-DA4C76032200}|Assembly-CSharp.csproj|C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\assets\\script\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,19 +55,110 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ExtremeScrollView.cs",
-              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\ExtremeScrollView.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ExtremeScrollView.cs",
-              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\ExtremeScrollView.cs",
-              "RelativeToolTip": "Assets\\Script\\ExtremeScrollView.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAtwA0AAAA1AAAA",
+              "Title": "MailManager.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Managers\\MailManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Managers\\MailManager.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Managers\\MailManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Managers\\MailManager.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T17:58:06.022Z",
+              "WhenOpened": "2024-06-23T07:28:41.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InfiniteScrollItemGroup.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Attribute\\InfiniteScrollItemGroup.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Attribute\\InfiniteScrollItemGroup.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Attribute\\InfiniteScrollItemGroup.cs",
+              "RelativeToolTip": "Assets\\Script\\Attribute\\InfiniteScrollItemGroup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T02:17:24.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShopItems.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\InfiniteScrollItem\\ShopItems.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\InfiniteScrollItem\\ShopItems.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\InfiniteScrollItem\\ShopItems.cs",
+              "RelativeToolTip": "Assets\\Script\\InfiniteScrollItem\\ShopItems.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T02:07:57.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientUtility.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Utility\\ClientUtility.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Utility\\ClientUtility.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Utility\\ClientUtility.cs",
+              "RelativeToolTip": "Assets\\Script\\Utility\\ClientUtility.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T01:58:10.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomRequireComponentFindChild.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Attribute\\CustomRequireComponentFindChild.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Attribute\\CustomRequireComponentFindChild.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Attribute\\CustomRequireComponentFindChild.cs",
+              "RelativeToolTip": "Assets\\Script\\Attribute\\CustomRequireComponentFindChild.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAD4vzIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T01:27:35.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InfiniteScrollView.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\UI\\InfiniteScrollView.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI\\InfiniteScrollView.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\UI\\InfiniteScrollView.cs",
+              "RelativeToolTip": "Assets\\Script\\UI\\InfiniteScrollView.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T01:00:19.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InfiniteItemBase.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\UI\\InfiniteItemBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI\\InfiniteItemBase.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\UI\\InfiniteItemBase.cs",
+              "RelativeToolTip": "Assets\\Script\\UI\\InfiniteItemBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T01:00:18.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIButton.cs",
+              "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\UI\\UIButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI\\UIButton.cs",
+              "ToolTip": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\UI\\UIButton.cs",
+              "RelativeToolTip": "Assets\\Script\\UI\\UIButton.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvwoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:47:54.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ResourceManager.cs",
               "DocumentMoniker": "C:\\Users\\Jonghow\\Desktop\\task_scrollLayout\\task_ScrollLayout\\Assets\\Script\\Managers\\ResourceManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Managers\\ResourceManager.cs",
