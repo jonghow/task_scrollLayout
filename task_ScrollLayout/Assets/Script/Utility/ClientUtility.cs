@@ -39,4 +39,9 @@ public static partial class ClientUtility
     {
         if (rGameObject != null) rGameObject.SetActive(isActive);
     }
+
+    public static void SetActive(GameObject gameObject, bool isActive)
+    {
+        if (gameObject != null) gameObject.SetActive(isActive);
+    }
 }

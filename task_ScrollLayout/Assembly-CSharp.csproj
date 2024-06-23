@@ -61,14 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\InfiniteScrollItem\ShopItems.cs" />
+    <Compile Include="Assets\Script\Core\MainGame.cs" />
     <Compile Include="Assets\Script\UI\UIButton.cs" />
+    <Compile Include="Assets\Script\Managers\ItemDataManager.cs" />
+    <Compile Include="Assets\Global\ClientGlobal.cs" />
     <Compile Include="Assets\Script\Attribute\CustomRequireComponentFindChild.cs" />
-    <Compile Include="Assets\Script\Managers\MailManager.cs" />
     <Compile Include="Assets\Script\UI\InfiniteItemBase.cs" />
     <Compile Include="Assets\Script\UI\InfiniteScrollView.cs" />
     <Compile Include="Assets\Script\Utility\ClientUtility.cs" />
     <Compile Include="Assets\Script\Managers\ResourceManager.cs" />
     <Compile Include="Assets\Script\Attribute\InfiniteScrollItemGroup.cs" />
+    <Compile Include="Assets\Script\Managers\UIWindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
