@@ -377,6 +377,7 @@
 "Assets/Script/UI/InfiniteScrollView.cs"
 "Assets/Script/UI/UIButton.cs"
 "Assets/Script/Utility/ClientUtility.cs"
+"Assets/Script/Utility/XmlUtility.cs"
 -langversion:9.0
 
 /deterministic

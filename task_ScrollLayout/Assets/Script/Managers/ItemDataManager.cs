@@ -1,13 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
+
+public class ItemData
+{
+    public void Parse(XmlElement xNode)
+    {
+        int.TryParse(xNode.GetAttribute("ID"), out this.ID);
+        int.TryParse(xNode.GetAttribute("Gold"), out this.Gold);
+        Item = xNode.GetAttribute("Item");
+        UseGoods = xNode.GetAttribute("UseGoods");
+    }
+
+    public int ID;
+    public int Gold;
+    public string Item;
+    public string UseGoods;
+}
 
 public class ItemDataManager 
 {
     public static ItemDataManager Instance;
 
-    public List<string> MailList = new List<string>();
+    public List<ItemData> ItemDataList = new List<ItemData>();
     private bool _isInitialized = false;
 
     public static ItemDataManager GetInstance()
@@ -21,17 +38,17 @@ public class ItemDataManager
         return Instance;
     }
 
-    public void Initialize()
+    public async void Initialize()
     {
         if(_isInitialized) return;
 
-        MailList.Clear();
+        ItemDataList.Clear();
 
-        for (int i = 0; i < 500; i++)
-            MailList.Add($"{i * 100}");
+        // xml Parse
+        ItemDataList = await XmlUtility.LoadXML($"GameData");
 
         _isInitialized = true;
     }
 
-    public string GetMail(int index) => MailList[index];
+    public ItemData GetItemData(int index) => ItemDataList.Count > index ? ItemDataList[index] : null;
 }
