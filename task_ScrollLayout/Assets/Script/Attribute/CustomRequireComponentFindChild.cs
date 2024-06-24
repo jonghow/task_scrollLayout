@@ -48,7 +48,7 @@ public class RequireComponentInChildrenDrawer : PropertyDrawer
                         newChild.gameObject.AddComponent(new RectTransform().GetType());
                         newChild.gameObject.AddComponent(requireAttribute.requiredComponent);
 
-                        ClientUtility.OnResetLocalPos(ref newChild);
+                        ClientUtility.OnSetPosByScrollGroup(ref newChild);
 
                         newChild.gameObject.SetActive(false);
                     }

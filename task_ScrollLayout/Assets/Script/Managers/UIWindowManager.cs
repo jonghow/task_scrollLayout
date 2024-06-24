@@ -46,6 +46,7 @@ public class UIWindowManager
         ClientUtility.SetActive(_backBlackWindow, false);
         _canvas = GameObject.Find("Canvas");
         _backBlackWindow.transform.SetParent(_canvas.transform);
+        ClientUtility.OnResetLocalPos(ref _backBlackWindow);
         _backBlackWindow.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
 
         _isInitialized = true;
@@ -62,6 +63,9 @@ public class UIWindowManager
     {
         if (_dicWindows.ContainsKey(name) == true) return;
 
+        if (ResourceManager.GetInstance().CheckInitialize() == false)
+            return;
+
         UnityEngine.Object unityObject = ResourceManager.GetInstance().GetResourceCache(ClientGlobal.LoadedResourceCategory.Prefab, $"{name}");
 
         if (unityObject != null)
@@ -71,6 +75,11 @@ public class UIWindowManager
         }
 
         CheckOnBlackBack();
+    }
+
+    public void Update()
+    {
+        
     }
 
     public void CloseUIWindow(string name)

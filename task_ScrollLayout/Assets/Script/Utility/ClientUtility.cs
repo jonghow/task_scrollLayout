@@ -5,6 +5,7 @@ using TMPro;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public static partial class ClientUtility 
 {
@@ -19,7 +20,13 @@ public static partial class ClientUtility
         if (obj is TextMeshProUGUI textMeshProUGUI)
             textMeshProUGUI.text = contents;
     }
-    public static void OnResetLocalPos(ref GameObject rGameObject)
+
+    public static void SetSprite(object obj, Sprite sprite)
+    {
+        if (obj is Image spriteComponent)
+            spriteComponent.sprite = sprite;
+    }
+    public static void OnSetPosByScrollGroup(ref GameObject rGameObject)
     {
         if (rGameObject != null)
         {
@@ -31,6 +38,16 @@ public static partial class ClientUtility
             localPosComponent.anchorMax = new Vector2(0f, 1f);
 
             localPosComponent.pivot = new Vector3(0f, 1f);
+
+            localPosComponent.localPosition = Vector3.zero;
+        }
+    }
+    public static void OnResetLocalPos(ref GameObject rGameObject)
+    {
+        if (rGameObject != null)
+        {
+            var localPosComponent = rGameObject.GetComponent<RectTransform>();
+            if (localPosComponent == null) return;
 
             localPosComponent.localPosition = Vector3.zero;
         }

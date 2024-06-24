@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\InfiniteScrollItem\ShopItems.cs" />
+    <Compile Include="Assets\Script\Utility\XmlUtility.cs" />
     <Compile Include="Assets\Script\Core\MainGame.cs" />
     <Compile Include="Assets\Script\UI\UIButton.cs" />
     <Compile Include="Assets\Script\Managers\ItemDataManager.cs" />
@@ -77,6 +78,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\ResourceData\1.GameData\ItemData.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />

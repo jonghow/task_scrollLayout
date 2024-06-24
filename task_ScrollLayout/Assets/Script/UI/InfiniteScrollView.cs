@@ -40,7 +40,7 @@ public class InfiniteScrollView : MonoBehaviour
     {
         _scrollRect = GetComponent<ScrollRect>();
         _scrollRectTransform = GetComponent<RectTransform>();
-        _dataCount = ItemDataManager.GetInstance().MailList.Count;
+        _dataCount = ItemDataManager.GetInstance().ItemDataList.Count;
 
         CreateItems();
         InitContentsLayoutSetting();
@@ -125,7 +125,7 @@ public class InfiniteScrollView : MonoBehaviour
         }
 
         item.gameObject.SetActive(true);
-        item.SetData(ItemDataManager.GetInstance().GetMail(idx));
+        item.SetData(ItemDataManager.GetInstance().GetItemData(idx));
     }
 
     void Update()

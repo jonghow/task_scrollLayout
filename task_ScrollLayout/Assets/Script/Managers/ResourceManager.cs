@@ -26,18 +26,18 @@ public class ResourceManager
         return Instance;
     }
 
-    public Dictionary<LoadedResourceCategory, string> m_DicCategoryByKey = new Dictionary<LoadedResourceCategory, string>();
-    public Dictionary<string, UnityEngine.Object> m_DicKeyByOriginal = new Dictionary<string, UnityEngine.Object>();
+    public Dictionary<LoadedResourceCategory, Dictionary<string, UnityEngine.Object>> m_DicCategoryByKey = new Dictionary<LoadedResourceCategory, Dictionary<string, Object>>();
 
     private GameObject _loadedScrollview;
     private bool _isInitialized = false;
+    private System.Action _onLoadedComplete;
+
+    public bool CheckInitialize() => this._isInitialized;
 
     async void Initialize()
     {
         if (_isInitialized) return;
-
         m_DicCategoryByKey.Clear();
-        m_DicKeyByOriginal.Clear();
 
         // Use UniTask By Addressable AsyncLoading
         AddResouceCache(LoadedResourceCategory.Prefab, $"InfinityScrollView", await GetPrefabAsyncLoading($"InfinityScrollView"));
@@ -45,43 +45,61 @@ public class ResourceManager
         StringBuilder sb = new StringBuilder();
         string toStringFromsb;
 
-        for (int i = 0; i < 2; ++i)
+        //Consume
+        for (int i = 0; i < 3; ++i)
         {
             sb.Clear();
-            sb.Append($"Casual{i}");
+            sb.Append($"Consume{i}");
+            toStringFromsb = sb.ToString();
+
+            AddResouceCache(LoadedResourceCategory.Sprite, $"{toStringFromsb}", await GetSpriteAsyncLoading($"{toStringFromsb}"));
+        }
+
+        //Equipment
+        for (int i = 0; i < 5; ++i)
+        {
+            sb.Clear();
+            sb.Append($"Equipment{i}");
+            toStringFromsb = sb.ToString();
+
+            AddResouceCache(LoadedResourceCategory.Sprite, $"{toStringFromsb}", await GetSpriteAsyncLoading($"{toStringFromsb}"));
+        }
+
+        //Goods
+        for (int i = 0; i < 3; ++i)
+        {
+            sb.Clear();
+            sb.Append($"Goods{i}");
             toStringFromsb = sb.ToString();
 
             AddResouceCache(LoadedResourceCategory.Sprite, $"{toStringFromsb}", await GetSpriteAsyncLoading($"{toStringFromsb}"));
         }
 
         _isInitialized = true;
+        _onLoadedComplete?.Invoke();
     }
 
     private void AddResouceCache(LoadedResourceCategory category, string addressable , UnityEngine.Object loadedObject)
     {
         if (m_DicCategoryByKey.ContainsKey(category) == false)
-            m_DicCategoryByKey.Add(category, addressable);
+            m_DicCategoryByKey.Add(category, new Dictionary<string, Object>());
 
-        if(m_DicKeyByOriginal.ContainsKey(addressable) == false)
-            m_DicKeyByOriginal.Add(addressable, loadedObject);
+        m_DicCategoryByKey[category].Add(addressable, loadedObject);
     }
 
     public UnityEngine.Object GetResourceCache(LoadedResourceCategory category, string addressable)
     {
-        string retString = null;
+        Dictionary<string, UnityEngine.Object> dicFinder = null;
         UnityEngine.Object ret = null;
 
-        if (m_DicCategoryByKey.TryGetValue(category, out retString) == false)
-            return null;
-
-        if (m_DicKeyByOriginal.TryGetValue(retString , out ret) == false)
-            return null;
+        if (m_DicCategoryByKey.TryGetValue(category, out dicFinder))
+            dicFinder.TryGetValue(addressable, out ret);
 
         return ret;
     }
     private async UniTask<GameObject> GetPrefabAsyncLoading(string addressableName)
     {
-        UniTask<GameObject> asyncOperationHandle = Addressables.LoadAssetAsync<GameObject>("InfinityScrollView").Task.AsUniTask();
+        UniTask<GameObject> asyncOperationHandle = Addressables.LoadAssetAsync<GameObject>(addressableName).Task.AsUniTask();
         GameObject ret = await asyncOperationHandle;
         return ret;
     }
